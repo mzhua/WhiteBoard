@@ -13,8 +13,7 @@
     tools:context="im.hua.whiteboard.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+    <im.hua.whiteboard.view.WhiteBoard
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </RelativeLayout>
