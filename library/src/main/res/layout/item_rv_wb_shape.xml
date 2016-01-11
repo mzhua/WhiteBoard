@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="shape"
+            type="im.hua.whiteboard.library.rva.bean.WBShapeBean"/>
+
+        <variable
+            name="handler"
+            type="im.hua.whiteboard.library.rva.vh.WBShapeVH"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_circle"
+            android:gravity="center"
+            android:text="@{shape.name}"
+            android:onClick="@{handler.onClick}"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</layout>
